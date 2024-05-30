@@ -1,6 +1,8 @@
 "use strict";
-getUsersWithFriend(users, friendName) {
-}
+const getUserNames = (users) => {
+  const names = users.map((user) => user.name);
+  return names;
+};
 
 console.log(
   getUserNames([

@@ -31,6 +31,13 @@ const allUsers = [
   }
 ];
 
+const getUsersWithFriend = (allUsers, friendName) => {
+    const allFriends = allUsers.filter((user) =>
+        user.friends.includes(friendName)
+    );
+    return allFriends;
+};
+
 console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
 // [
 //   {
